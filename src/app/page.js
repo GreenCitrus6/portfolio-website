@@ -2,13 +2,21 @@ import Image from 'next/image'
 import Header from './header'
 import ProjectCard from './projectcard'
 
+function SocialLink( {snsName} ) {
+  return (
+    <div>
+      <a>{snsName}</a>
+    </div>
+  )
+}
+
 export default function Home() {
   
   return (
     <>
       <Header />
       <main className="flex flex-col text-gray-800">
-        <section id="aboutSection" className="">
+        <section id="aboutSection" className="h-[calc(100vh-4rem)]">
           {/* about section */}
           <h1>Hello, I'm Daniel</h1>
           <h2>and I do Web Development</h2>
@@ -32,9 +40,12 @@ export default function Home() {
           <ProjectCard /> 
         </section>
         <section id="contactSection" className="">
-          <h2>Check out more of my work</h2>
+          <h2>Get in touch with me</h2>
           {/* contact info, including linkedin and github */}
-
+          <div id="linksContainer">
+            <SocialLink snsName="Github" />
+            <SocialLink snsName="LinkedIn" />
+          </div>
         </section>
       </main>
     </>
