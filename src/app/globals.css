@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(247, 247, 247);
   /* --foreground-rgb: 150,150,150; */
   /* --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255; */
