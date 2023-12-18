@@ -2,6 +2,7 @@
 
 import reactTodoPreview from '../../public/img/react-todo-preview.png'
 import countryViewerPreview from '../../public/img/country-viewer-preview.png'
+import timeDashboardPreview from '../../public/img/time-dashboard-preview.png'
 import Header from './header'
 import ProjectCard from './projectcard'
 import AboutPopUp from "./aboutpopup"
@@ -30,6 +31,13 @@ export default function Home() {
     desc: "A simple app to search for countries, allowing the user to filter them by name and region. Each tile links to a page with more detailed information. Users can switch to a dark theme, and their preference is saved in localStorage.",
     url: "https://fm-rest-countries-six.vercel.app/"
   };
+  const timeDashboardInfo = {
+    name: "Time Tracking Dashboard",
+    image: timeDashboardPreview,
+    techUsed: ["React", "Next.js", "TailwindCSS"],
+    desc: "A simple page displaying a dashboard with various categories of tracked time. The user can change between daily, weekly and monthly views.",
+    url: "https://fm-time-tracking-five.vercel.app/"
+  }
 
   return (
     <>
@@ -69,11 +77,12 @@ export default function Home() {
           p-6 pb-8">
             Here&apos;s some of my work
           </h2>
-          <section id="cardsContainer" className="grid gap-10 justify-center sm:grid-cols-2 px-8
+          <section id="cardsContainer" className="grid gap-10 justify-center sm:grid-cols-3 px-8
           sm:mx-6">
             <ProjectCard project={reactToDoListInfo} changeModalDisplay={changeModalDisplay} /> 
             <ProjectCard project={apiCountryViewerInfo}
             changeModalDisplay={changeModalDisplay} />
+            <ProjectCard project={timeDashboardInfo} changeModalDisplay={changeModalDisplay} />
             {/* <ProjectCard /> */}
           </section>
         </div>

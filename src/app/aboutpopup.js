@@ -9,7 +9,8 @@ export default function AboutPopUp({ project, displayState, changeModalDisplay }
 
         <div className="modalOverlay absolute top-0 left-0 
         flex justify-center items-center bg-[rgb(0,0,0,0.3)]
-        w-full h-full z-40">
+        w-full h-full z-40"
+        onClick={changeModalDisplay}>
             <div className="modalWrapper w-[500px] max-h-[600px] px-5">
                 <section className="modalWindow bg-gray-50 text-gray-700
                 h-full w-full rounded-lg p-4">
