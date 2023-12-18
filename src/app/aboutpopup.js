@@ -28,6 +28,7 @@ export default function AboutPopUp({ project, displayState, changeModalDisplay }
                     <div className="modalBody pt-3">
                         <Image
                         src={project.image}
+                        alt={`A screenshot of a ${project.name} app`}
                         className="border-2 border-gray-500 rounded-md mb-5" />
                         <span className="italic">
                             Made with:

@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image'
 import reactTodoPreview from '../../public/img/react-todo-preview.png'
 import countryViewerPreview from '../../public/img/country-viewer-preview.png'
 import Header from './header'
@@ -54,14 +53,6 @@ export default function Home() {
             text-xs font-sans
             sm:text-sm sm:mb-6">
               <p className="italic text-gray-400">This website was made with Next.js</p>
-              {/* <a className="text-gray-400 italic">Click <span className="text-amber-500 hover:text-amber-400 active:text-amber-300"
-              onClick={() => changeModalDisplay(setThisPageDesc)}>here</span> to learn about all the techonologies used to make this page</a>
-              {/* make a modal window that pops up and shows the technologies used in this page:
-              react.js with next.js
-              tailwind.css*/} 
-              <AboutPopUp project="This page" displayState={thisPageDesc} changeModalDisplay={() => changeModalDisplay(setThisPageDesc)} />
-              
-              {/*  */}
               
             </div>
           </div>
@@ -69,8 +60,7 @@ export default function Home() {
         <section id="portfolioSection" className="bg-[rgb(246,247,248)] 
         flex flex-col items-center
         w-full h-full 
-        scroll-mt-16 px-5 pb-10
-        ">
+        scroll-mt-16 px-5 pb-10">
 
         <div className="max-w-[1000px]">
           <h2 className="text-3xl font-bold italic text-stone-700
