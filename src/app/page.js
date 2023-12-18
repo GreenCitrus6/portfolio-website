@@ -47,8 +47,10 @@ export default function Home() {
           text-left mt-20 p-6
           sm:mt-24">
             <h1 className="font-bold text-3xl mb-2
-            sm:text-5xl">Hello, I'm Daniel</h1>
-            <h2 className="font-semibold text-md sm:text-2xl">and I do Web Development</h2>
+            sm:text-5xl">Hello, I&apos;m Daniel</h1>
+            <h2 className="font-semibold text-md sm:text-2xl">
+              and I do Web Development
+            </h2>
             <div id="explanationContainer" className="mt-4 
             text-xs font-sans
             sm:text-sm sm:mb-6">
@@ -65,7 +67,7 @@ export default function Home() {
         <div className="max-w-[1000px]">
           <h2 className="text-3xl font-bold italic text-stone-700
           p-6 pb-8">
-            Here's some of my work
+            Here&apos;s some of my work
           </h2>
           <section id="cardsContainer" className="grid gap-10 justify-center sm:grid-cols-2 px-8
           sm:mx-6">
