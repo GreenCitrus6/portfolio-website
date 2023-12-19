@@ -18,7 +18,8 @@ export default function Home() {
     name: "React To-do List",
     image: reactTodoPreview,
     techUsed: ["React", "Next.js", "TailwindCSS"],
-    desc: "A simple to-do list app where users can add tasks, remove tasks individually, as well as clear all tasks marked complete at once. A user's tasks persist across sessions by keeping them in localStorage.",
+    desc: "A simple to-do list app where users can add tasks, remove tasks individually, as well as clear all tasks marked complete at once. A user's tasks persist across sessions by keeping them in localStorage. ",
+    projectOrigin: "This project was made from scratch.",
     url: "https://react-todo-five-brown.vercel.app/"
   }
   const apiCountryViewerInfo = {
@@ -26,6 +27,7 @@ export default function Home() {
     image: countryViewerPreview,
     techUsed: ["React", "Next.js", "TailwindCSS", "RESTful API"],
     desc: "A simple app to search for countries, allowing the user to filter them by name and region. Each tile links to a page with more detailed information. Users can switch to a dark theme, and their preference is saved in localStorage.",
+    projectOrigin: "The design and concept for this project was provided by Frontend Mentor. The code is original.",
     url: "https://fm-rest-countries-six.vercel.app/"
   };
   const timeDashboardInfo = {
@@ -33,6 +35,7 @@ export default function Home() {
     image: timeDashboardPreview,
     techUsed: ["React", "Next.js", "TailwindCSS"],
     desc: "A simple page displaying a dashboard with various categories of tracked time. The user can change between daily, weekly and monthly views.",
+    projectOrigin: "The design and concept for this project was provided by Frontend Mentor. The code is original.",
     url: "https://fm-time-tracking-five.vercel.app/"
   }
 

@@ -6,14 +6,15 @@ export default function AboutPopUp({ project, displayState, changeModalDisplay }
 
     if (displayState) {
     return(
-
-        <div className="modalOverlay absolute top-0 left-0 
+        
+        <div className="modalOverlay fixed top-0 left-0 right-0
         flex justify-center items-center bg-[rgb(0,0,0,0.3)]
         w-full h-full z-30"
         onClick={changeModalDisplay}>
-            <div className="modalWrapper w-[500px] max-h-[600px] px-5">
+            <div className="modalWrapper max-w-[450px] px-5
+            md:max-w-[600px]">
                 <section className="modalWindow bg-gray-50 text-gray-700 z-40 
-                h-full w-full rounded-lg p-4"
+                h-full max-h-[calc(100vh-2rem)] w-full overflow-scroll rounded-lg p-4"
                 onClick={changeModalDisplay}> {/* when the body of the modal is clicked, state is changed twice, therefore it does not disappear */}
                     <div className="modalHeader flex justify-between items-center">
                         <h3 className="text-2xl font-bold">
@@ -32,7 +33,8 @@ export default function AboutPopUp({ project, displayState, changeModalDisplay }
                         <Image
                         src={project.image}
                         alt={`A screenshot of a ${project.name} app`}
-                        className="border-2 border-gray-500 rounded-md mb-5" />
+                        className="border-2 border-gray-500 rounded-md mb-5
+                        w-full" />
                         <span className="italic">
                             Made with:
                         </span>
@@ -45,7 +47,7 @@ export default function AboutPopUp({ project, displayState, changeModalDisplay }
                             })}
                         </ul>
                         <p className="p-2">{project.desc}</p>
-
+                        <p className="p-2">{('projectOrigin' in project ? project.projectOrigin : '')}</p>
                     </div>
                 </section>
             </div>
