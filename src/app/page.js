@@ -5,14 +5,11 @@ import countryViewerPreview from '../../public/img/country-viewer-preview.png'
 import timeDashboardPreview from '../../public/img/time-dashboard-preview.png'
 import Header from './header'
 import ProjectCard from './projectcard'
-import AboutPopUp from "./aboutpopup"
 import { useState } from 'react';
 
 
 export default function Home() {
   // states for the display of the various 
-  const [thisPageDesc, setThisPageDesc] = useState(false);
-
   const changeModalDisplay = (stateFunction) => {
     stateFunction(state => !state)
   }
@@ -83,7 +80,6 @@ export default function Home() {
             <ProjectCard project={apiCountryViewerInfo}
             changeModalDisplay={changeModalDisplay} />
             <ProjectCard project={timeDashboardInfo} changeModalDisplay={changeModalDisplay} />
-            {/* <ProjectCard /> */}
           </section>
         </div>
 
