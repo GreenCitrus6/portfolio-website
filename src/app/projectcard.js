@@ -24,11 +24,12 @@ export default function ProjectCard({ project, changeModalDisplay }) {
                 alt={`A screenshot of a ${project['name']} app`}
                 placeholder="blur" />
             <div className="flex justify-between">
-                <span className="w-1/2 text-center
+                <a href={project.url} target="_blank"
+                className="w-1/2 text-center
                 p-3 
                 hover:bg-gray-100 
                 active:bg-gray-300
-                ease-out duration-300"><a href={project.url} target="_blank">Try it</a></span>
+                ease-out duration-300">Try it</a>
                 <span className="w-1/2 text-center
                 p-3 
                 hover:bg-gray-100 hover:cursor-pointer

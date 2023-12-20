@@ -6,7 +6,6 @@ export default function AboutPopUp({ project, displayState, changeModalDisplay }
 
     if (displayState) {
     return(
-        
         <div className="modalOverlay fixed top-0 left-0 right-0
         flex justify-center items-center bg-[rgb(0,0,0,0.3)]
         w-full h-full z-30"
