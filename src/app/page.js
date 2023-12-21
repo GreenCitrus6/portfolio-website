@@ -27,7 +27,7 @@ export default function Home() {
     name: "API Country Viewer",
     image: countryViewerPreview,
     techUsed: ["React", "Next.js", "TailwindCSS", "RESTful API"],
-    desc: "A simple app to search for countries, allowing the user to filter them by name and region. Each tile links to a page with more detailed information. Users can switch to a dark theme, and their preference is saved in localStorage.",
+    desc: "A simple app to search for countries, allowing the user to filter them by name and region. Country information is pulled from the REST countries API. Each tile links to a page with more detailed information. Users can switch to a dark theme, and their preference is saved in localStorage.",
     projectOrigin: "The design and concept for this project was provided by Frontend Mentor. The code is original.",
     url: "https://fm-rest-countries-six.vercel.app/",
     githubUrl: "https://github.com/GreenCitrus6/FM-rest-countries"
