@@ -18,12 +18,14 @@ export default function AboutPopUp({ project, displayState, changeModalDisplay }
     return(
         <div className="modalOverlay fixed top-0 left-0 right-0
         flex justify-center items-center bg-[rgb(0,0,0,0.3)]
-        w-full h-full z-30"
+        w-full h-full z-30
+        ease-out duration-200"
         onClick={changeModalDisplay}>
             <div className="modalWrapper max-w-[450px] px-5
             md:max-w-[600px]">
                 <section className="modalWindow bg-gray-50 text-gray-700 z-40 
-                h-full max-h-[calc(100vh-2rem)] w-full overflow-scroll rounded-lg p-4"
+                h-full max-h-[calc(100vh-2rem)] w-full overflow-scroll rounded-lg p-4
+                ease-out duration-500"
                 onClick={changeModalDisplay}> {/* when the body of the modal is clicked, state is changed twice, therefore it does not disappear */}
                     <div className="modalHeader flex justify-between items-center">
                         <h3 className="text-2xl font-bold 
@@ -33,14 +35,20 @@ export default function AboutPopUp({ project, displayState, changeModalDisplay }
                             target="_blank"
                             className="pl-2">{githubInfo.icon}</a>
                         </h3>
-                        <a className="text-3xl font-mono z-50
+                        <span className="z-50 
+                        flex justify-center w-7
                         hover:text-red-700 
                         hover:cursor-pointer
                         active:text-gray-300
-                        ease-out duration-200" 
+                        ease-in duration-200" 
                         onClick={changeModalDisplay}> {/* clicking the exit X changed the displayState 3 times */}
-                            x
-                        </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6
+                            hover:w-7 hover:h-7
+                            ease-out duration-75">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                            </svg>
+
+                        </span>
                     </div>
                     <div className="modalBody pt-3">
                         <Image
