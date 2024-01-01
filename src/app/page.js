@@ -5,6 +5,7 @@ import countryViewerPreview from '../../public/img/country-viewer-preview.png'
 import timeDashboardPreview from '../../public/img/time-dashboard-preview.png'
 import Header from './header'
 import ProjectCard from './projectcard'
+import npmClockPreview from '../../public/img/npm-clock-preview.png';
 import { useState } from 'react';
 
 
@@ -40,7 +41,16 @@ export default function Home() {
     projectOrigin: "The design and concept for this project was provided by Frontend Mentor. The code is original.",
     url: "https://fm-time-tracking-five.vercel.app/",
     githubUrl: "https://github.com/GreenCitrus6/FM-time-tracking"
-  }
+  };
+  const npmClockInfo = {
+    name: "NPM + Webpack Clock",
+    image: npmClockPreview,
+    techUsed: ["HTML", "TailwindCSS", "JavaScript", "Webpack", "Node Package Manager"],
+    desc: "A single page app that displays the current time and date. The user can change the timezone by clicking on the current timezone and picking a different one from the drop down menu. The date formatting uses the Day.js package and the modal window uses Micromodal.js.",
+    projectOrigin: "The concept for this project was taken from the Full Stack map from https://roadmap.sh/full-stack/.",
+    url: "https://greencitrus6.github.io/npm-clock-two/",
+    githubUrl: "https://github.com/GreenCitrus6/npm-clock-two",
+  };
 
   return (
     <>
@@ -80,11 +90,12 @@ export default function Home() {
           p-6 pb-8">
             Here&apos;s some of my work
           </h2>
-          <section id="cardsContainer" className="grid gap-10 justify-center sm:grid-cols-3 px-8
+          <section id="cardsContainer" className="grid gap-10 justify-center sm:grid-cols-2 px-8
           sm:mx-6">
-            <ProjectCard project={reactToDoListInfo} changeModalDisplay={changeModalDisplay} /> 
+            <ProjectCard project={npmClockInfo} changeModalDisplay={changeModalDisplay} /> 
             <ProjectCard project={apiCountryViewerInfo}
             changeModalDisplay={changeModalDisplay} />
+            <ProjectCard project={reactToDoListInfo} changeModalDisplay={changeModalDisplay} />
             <ProjectCard project={timeDashboardInfo} changeModalDisplay={changeModalDisplay} />
           </section>
         </div>
